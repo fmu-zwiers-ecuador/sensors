@@ -7,7 +7,7 @@ import adafruit_bme280
 import datetime
 
 # Open the file with the date as it's name in append mode so as not to overwrite existing data
-file = open(open("Node_ID").read() + ": " + datetime.datetime.now().strftime("%m-%d-%y") + ".json", "a")
+file = open("/home/pi/Desktop/" + open("Node_ID").read() + ": " + datetime.datetime.now().strftime("%m-%d-%y") + ".json", "a")
 
 
 # Create the objects needed to instantiate the sensors
