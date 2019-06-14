@@ -17,3 +17,14 @@ Connect BME280 to Raspberry Pi (Uses SPI because I2C is in use by the TSL2591 an
 4. Connect SCL/SCK to Pin 23 (SPI SCLK)
 5. Connect ADDR/MISO to Pin 21 (SPI MISO)
 6. Connect CS to Pin 29 (GPIO Pin 5; This is changeable, but my script uses it like this)
+
+--------------------------------------------------------
+
+To use the script:
+1. Install CircuitPython
+2. Ensure sensors are connected as described above
+3. Place the script, Node_ID, and libraries into the same folder. It does not matter where they are as long as you can reference them
+4. Edit Node_ID to hold the current node's name
+5. Run the script.
+
+The script sets a default value of -1.0 for all readings until this value gets overridden by the script reading the appropriate sensor. If the script cannot use the sensor, the default value of -1.0 is regarded as an error state and lets you know there is something wrong without breaking anything on the supervisor end.
