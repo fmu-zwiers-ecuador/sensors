@@ -18,6 +18,11 @@ Connect BME280 to Raspberry Pi (Uses SPI because I2C is in use by the TSL2591 an
 5. Connect ADDR/MISO to Pin 21 (SPI MISO)
 6. Connect CS to Pin 29 (GPIO Pin 5; This is changeable, but my script uses it like this)
 
+Connect HC-sr501 (PIR Sensor) to Raspberry Pi:
+1. Connect VCC to Pin 2 (5v)
+2. Connect GND to Pin 6 (Ground)
+3. Connect OUT to Pin 7 (GPIO Pin 4; this is changeable, but my test script uses this one)
+
 --------------------------------------------------------
 
 To use the script:
