@@ -1,6 +1,6 @@
 from gpiozero import MotionSensor
 
-pin = 4                  # Define what GPIO pin the sensor will use -- I used pin 4
+pin = 4                  # Define what GPIO pin the sensor will use -- I used GPIO4
 pir = MotionSensor(pin)  # Create the sensor object using the pin that was defined
 
 while True:
