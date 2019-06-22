@@ -1,7 +1,7 @@
 # sensors
 Scripts and libraries used to read the sensors and store data in a usable format
 
-To use WaveShare BME280 and Adafruit TSL2591:
+To use WaveShare BME280, Adafruit TSL2591, and HC-sr501:
 (Sensor Connection then Raspberry pi pin)
 
 Connect TSL2591 to Raspberry Pi:
@@ -32,4 +32,4 @@ To use the script:
 4. Edit Node_ID to hold the current node's name
 5. Run the script.
 
-The script sets a default value of -1.0 for all readings until this value gets overridden by the script reading the appropriate sensor. If the script cannot use the sensor, the default value of -1.0 is regarded as an error state and lets you know there is something wrong without breaking anything on the supervisor end.
+The script sets a default value of -1.0 for all readings until this value gets overridden by the script reading the appropriate sensor. If the script cannot use the sensor, the default value of -1.0 is intended as an error state to let you know there is something wrong without breaking anything on the supervisor end.
